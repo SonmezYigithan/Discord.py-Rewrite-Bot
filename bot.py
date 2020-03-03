@@ -225,4 +225,4 @@ async def play(ctx, url):
 @client.command()
 async def clear(message):
 """
-bot.run('NTQwOTM4NTAxODk4NjMzMjc0.XK49LQ.-2Reah2ci5EtvIBrs3v1acJf7DA')
+bot.run('INSERT YOUR OWN TOKEN HERE')
