@@ -179,13 +179,4 @@ async def ping(ctx):
     await ctx.send(f'Ping of Bot: {round(bot.latency * 1000)}ms')
 
 
-@bot.command(aliases=['nasılsın', 'merhaba'])
-async def naber(ctx):
-    await ctx.send('nebıyon kodumun')
-
-
-@bot.command()
-async def nereyebakıyon(ctx):
-    await ctx.send('Nereye Bakıyon? Oğğlum Nereye bakıyon?')
-
 bot.run('INSERT YOUR OWN TOKEN HERE')
