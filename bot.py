@@ -188,41 +188,4 @@ async def naber(ctx):
 async def nereyebakıyon(ctx):
     await ctx.send('Nereye Bakıyon? Oğğlum Nereye bakıyon?')
 
-
-@bot.command()
-async def çay(message, *, isim):
-    await message.channel.send(f'{message.author} kodumun {isim} şahısına çay söyledi. İç de kendine gel hararetini alır flamein kalmaz.  ')
-
-
-@bot.command()
-async def komutlar(ctx):
-    komut_listesi = ".naber\n.ping\n.komutlar\n.ask_olcer (isim)\n"
-    await ctx.send(komut_listesi)
-
-
-@bot.command()
-async def ask_olcer(message, *, isim):
-    number = random.randint(45, 100)
-    if (isim == 'aleyna' and message.author == "SAYK#1710") or (isim == 'Aleyna' and message.author == "SAYK#1710"):
-        await message.channel.send(f'{isim} ile {message.author} aranızdaki Aşk %95 siz olmuşsunuz!!')
-    elif isim == 'Abdulkafi' or isim == 'abdulkafi':
-        await message.channel.send(f'{isim} ile {message.author} aranızdaki Aşk %!#0')
-    elif (isim == 'aleyna' and message.author == "#1675") or (isim == 'Aleyna' and message.author == "#1675"):
-        await message.channel.send(f'{isim} ile {message.author} aranızdaki Aşk %0')
-    else:
-        await message.channel.send(f'{isim} ile {message.author} aranızdaki Aşk %{number}')
-
-"""
-@bot.command()
-async def play(ctx, url):
-    server = ctx.message.server
-    VoiceChannel.connect()
-    player = await voice_client.create_ytdl_player(url)
-    players[server.id] = player
-    player.start()
-"""
-"""
-@client.command()
-async def clear(message):
-"""
 bot.run('INSERT YOUR OWN TOKEN HERE')
