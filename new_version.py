@@ -15,12 +15,6 @@ from keep_alive import keep_alive
 import pymongo
 
 
-
-# play yaparken isim ile arama
-# play bozuk, onu düzelt
-# çok oynatılacak dosyaları indirmeden direkt çek
-# bot disconnect olunca ( otomatik olarak ya da ben disconnect edersem ) referanslar gitsin
-
 ############# ses paketini indirme kodu ######################
 
 def CheckModules():
